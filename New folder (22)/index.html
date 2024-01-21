@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Love Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <div class="message" id="message1">Heyyyy beautiful!!</div>
+        <div class="message" id="message2">Do you love me?</div>
+        <div id="options">
+            <button onclick="handleResponse(true)">Yes</button>
+            <button id="noButton" onmouseover="floatButton()" onclick="handleResponse(false)">No</button>
+        </div>
+        <div class="message" id="message3"></div>
+        <div id="popup" class="hidden">
+            🧸 🌸 🍫
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
