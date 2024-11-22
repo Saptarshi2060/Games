@@ -14,7 +14,8 @@ function handleResponse(response) {
     document.getElementById('options').style.display = 'none';
 
     if (response) {
-        document.getElementById('message3').innerHTML = "I knew that!I knew that!Yesss!! But I LOVE YOU more 😘😘😘";
+        document.getElementById('message3').innerHTML = 
+            "Hell Yeahhhhh! You make me so happy! 🌸 You are the most important person in my life, and I can't wait to cherish every moment with you. 💖";
         document.getElementById('message3').style.display = 'block';
         showPopup();
     } else {
