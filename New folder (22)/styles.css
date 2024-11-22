@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #ffc0cb; /* Misty Rose */
+    background-color: #ffb6c1; /* Light Pink */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,7 @@ body {
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeIn 1.5s forwards;
+    font-size: 18px;
 }
 
 @keyframes fadeIn {
@@ -36,7 +37,7 @@ body {
 }
 
 button {
-    background-color: #4caf50; /* Green */
+    background-color: #ff69b4; /* Hot Pink */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -46,7 +47,12 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 #noButton {
@@ -55,4 +61,27 @@ button {
 
 #message3 {
     display: none;
+}
+
+#popup {
+    font-size: 24px;
+    color: #ff1493; /* Deep Pink */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1s forwards, fadeOut 1s 2s forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
